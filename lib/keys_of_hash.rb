@@ -7,7 +7,6 @@ class Hash
         self.each do |key, value|
             arr << key if value == argument
         end
-        () if self.keys.include? argument
     end
     arr
   end
