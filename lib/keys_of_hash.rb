@@ -4,8 +4,10 @@ class Hash
     # code goes here
     arr = Array.new
     arguments.each do |argument|
-        binding.pry
-        (arr << argument) if self.keys.include? argument
+        self.each do |key, value|
+            arr << key if value == argument
+        end
+        () if self.keys.include? argument
     end
     arr
   end
