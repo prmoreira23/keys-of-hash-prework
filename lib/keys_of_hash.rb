@@ -3,7 +3,7 @@ class Hash
     # code goes here
     arr = Array.new
     arguments.each do |argument|
-
+        arr << argument if this.keys.include? argument
     end
   end
 end
