@@ -1,6 +1,9 @@
 class Hash
   def keys_of(*arguments)
     # code goes here
-    arguments.keys
+    arr = Array.new
+    arguments.each do |argument|
+        
+    end
   end
 end
