@@ -5,5 +5,6 @@ class Hash
     arguments.each do |argument|
         arr << argument if this.keys.include? argument
     end
+    arr
   end
 end
